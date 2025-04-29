@@ -1,0 +1,21 @@
+#top {
+    padding: 0;
+    margin: 0;
+}
+
+.title-cv {
+    display: flex;
+    flex-direction: column;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5%;
+    height: 10%;
+}
+
+.title-cv h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+}

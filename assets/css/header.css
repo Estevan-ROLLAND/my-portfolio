@@ -1,0 +1,139 @@
+:root { /*Darkmode*/
+    --base-color: #0C0C0C;
+    --base-variant: #272727;
+    --text-color: white;
+    --primary-button-color: #c1c4cc;
+    --secondary-button-color: hsl(0, 0%, 34%);
+    --background-image: url(../imgs/FIRST_PLANET.png);
+}
+
+.lightmode { /*Darkmode*/
+    --base-color: #e6e6e6;
+    --base-variant: #c1c4cc;
+    --text-color: #0C0C0C;
+    --primary-button-color: #575757;
+    --secondary-button-color: #aaaaaa;
+    --background-motif: url(../reference/fondwtf-lightmode_2.png);
+}
+
+html {
+    font-family: "Oxanium", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    scroll-behavior:smooth;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    color: var(--text-color);
+    background-color: var(--base-color);
+}
+
+h1 {
+    font-family: "Oxanium", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    background-color: var(--base-color);
+    font-size: large;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: flex;
+    text-decoration: none;
+    color: var(--text-color) !important;
+    list-style: none;
+    text-align: center;
+    user-select: text;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color) !important;
+}
+
+a:hover {
+    color: var(--secondary-button-color) !important;
+}
+
+a#myName:hover {
+    color: var(--text-color) !important;
+}
+
+
+/* Bannière de fin */
+footer {
+    margin-top: auto;
+    background-color: var(--base-color);
+    border-top: var(--base-variant) thick solid;
+    padding-top: 1%;
+}
+
+footer h1 {
+    font-size: 50px;
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+}
+
+#contact {
+    color: var(--text-color);
+    text-align: center;
+    font-style: oblique;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+#mail {
+    color: var(--text-color);
+    text-align: center;
+    font-style: oblique;
+    margin: 0;
+    /* padding-bottom: 2%; */
+    font-weight: light;
+    font-size: medium;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.reseaux svg {
+    fill: var(--text-color);
+    height: 50px;
+    width: 50px;
+}
+
+svg {
+    fill: var(--text-color);
+}
