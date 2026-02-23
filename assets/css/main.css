@@ -135,13 +135,13 @@ label.card {
     background-position: center;
 }
 
-.card > .row {
+.card .row {
     display: flex;
     height: 20%;
     width: 105%;
 }
 
-.card > .row > .desc{
+.card .row > .desc{
     overflow: hidden;
     opacity: 0;
     width: 850px;
@@ -207,4 +207,8 @@ input:checked + .desc h2{
 
 #buttonToProject svg{
     fill: var(--text-color);
+}
+
+.project-link:hover {
+    color: var(--text-color) !important;
 }
