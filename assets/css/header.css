@@ -110,7 +110,7 @@ footer h1 {
     font-size: x-large;
 }
 
-#mail {
+.mail {
     color: var(--text-color);
     text-align: center;
     font-style: oblique;

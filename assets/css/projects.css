@@ -22,20 +22,31 @@
 
 #body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     background: linear-gradient(var(--base-color), var(--base-variant));
+    padding: 2% 0;
 }
 
 #body h1 {
     font-size: xx-large;
 }
 
+#section-selector {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    justify-content: space-between;
+    height: 80vh;
+    width: 25vh;
+    padding: 5% 2%;
+    position: sticky;
+    top: 0;
+    border-right: thick solid var(--text-color);
+}
+
 .projects {
-    display: block;
-    margin: auto;
-    width: 60%;
-    
+    width: 70%;
+    padding: 0 5%;
 }
 
 section {
@@ -57,19 +68,21 @@ section {
     text-decoration: underline !important;
 }
 
-.sections {
-    
-}
-
-
-.sections h1 {
+#sections h1 {
     margin: 0;
     padding: 4%;
     background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
 }
 
-.sections p {
+#sections p {
     margin-top: 2%;
+}
+
+#projects-sections {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 #Shadorian #img {
@@ -81,14 +94,8 @@ section {
     background-image: url("../imgs/Sci-Fi\ Passage.png");
 }
 
-#Modelling img {
-    height: 30%;
-    border-radius: 50px;
-}
-
 #autre #img {
     background-image: url("../imgs/Interior.png");
-    
 }
 
 
@@ -100,7 +107,6 @@ section {
 #ytb_iframes, #sc_iframes {
     display: flex;
     justify-content: center;
-    
     margin-bottom: 5%;
 }
 
@@ -155,15 +161,3 @@ section {
     border-radius: 50px;
 }
 
-/* lang-tools */
-
-#lang-tools {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#lang-tools img {
-    height: 200px;
-    padding: 1%;
-}

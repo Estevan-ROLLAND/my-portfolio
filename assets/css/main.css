@@ -62,10 +62,16 @@ h1 {
     margin-bottom: 2%;
 }
 
-#about-me p {
+#about-me #desc {
     border-left: thick solid;
     padding-left: 2%;
     width: 80%;
+}
+
+#desc p {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 95%;
 }
 
 #projects {
