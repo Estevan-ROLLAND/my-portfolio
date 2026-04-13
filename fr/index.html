@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8" content="en">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
 
@@ -25,11 +25,15 @@
     <div id="top">
         <header>
             <div class="navbar">
-                <ul>
-                    <li>
-                        <a href="index.html" id="myName"><strong>Estevan ROLLAND</strong></a>
-                    </li>
+                <a href="index.html" id="myName"><strong>Estevan ROLLAND</strong></a>
 
+                <button id="menu-toggle" class="menu-icon" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links">
                     <li class="cb_logo">
                         <a href="#about-me">À Propos</a>
                     </li>
@@ -40,7 +44,23 @@
                         <a id="my-cv" href="../assets/FR_CV_Estevan_ROLLAND.pdf" download="FR_CV_Estevan_ROLLAND">CV</a>
                     </li>
                     <li>
-                        <select name="lang-selector" id="lang-selector">
+                        <select name="lang-selector" class="lang-selector">
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+                <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close menu">&times;</button>
+                <ul class="mobile-menu-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#about-me">À Propos</a></li>
+                    <li><a href="projects.html">Projets</a></li>
+                    <li><a href="../assets/FR_CV_Estevan_ROLLAND.pdf" download="FR_CV_Estevan_ROLLAND">CV</a></li>
+                    <li>
+                        <select name="lang-selector-mobile" class="lang-selector">
                             <option value="en">EN</option>
                             <option value="fr">FR</option>
                         </select>
@@ -263,6 +283,7 @@
 
     <!--parties javascript-->
     <script src="../assets/js/translate.js"></script>
+    <script src="../assets/js/burger-menu.js"></script>
 
 </body>
 

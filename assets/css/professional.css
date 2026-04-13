@@ -19,3 +19,14 @@
     text-align: center;
     margin: 0;
 }
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 768px) {
+    .title-cv {
+        padding: 5%;
+    }
+
+    .title-cv h1 {
+        font-size: 32px;
+    }
+}

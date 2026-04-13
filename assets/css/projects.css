@@ -161,3 +161,81 @@ section {
     border-radius: 50px;
 }
 
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 768px) {
+    .title-projects {
+        padding: 5%;
+    }
+
+    .title-projects h1 {
+        font-size: 32px;
+    }
+
+    #body {
+        flex-direction: column;
+        padding: 1% 0;
+    }
+
+    #section-selector {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 2px solid var(--text-color);
+        padding: 2%;
+        justify-content: flex-start;
+        font-size: large;
+    }
+
+    #section-selector a {
+        margin-bottom: 0.5rem;
+    }
+
+    .projects {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    section {
+        margin-bottom: 2%;
+        text-align: justify;
+    }
+
+    #img {
+        border-radius: 30px;
+    }
+
+    #gallery {
+        flex-flow: column wrap;
+    }
+
+    #gallery img {
+        width: 100%;
+        margin: 0.5%;
+    }
+
+    #gallery video {
+        width: 100%;
+    }
+
+    #School_Projects #gallery div img,
+    #School_Projects #gallery div video {
+        width: 100%;
+        height: auto;
+    }
+
+    #ytb_iframes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ytb_iframes * {
+        margin: 0.5rem 0;
+        max-width: 100%;
+    }
+
+    #sc_iframes iframe {
+        max-width: 100%;
+    }
+}
+

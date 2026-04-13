@@ -1,12 +1,15 @@
-const langSelector = document.getElementById("lang-selector");
+const langSelectors = document.querySelectorAll(".lang-selector");
 
-const currentUrl = window.location.href;
-langSelector.value = currentUrl.includes("/en/") ? "en" : "fr";
-console.log("Language selector found:", langSelector.value);
-langSelector.addEventListener("change", function() {
-    const selectedLang = this.value;
+if (langSelectors.length > 0) {
     const currentUrl = window.location.href;
-    const newUrl = currentUrl.replace(/\/(en|fr)\//, `/${selectedLang}/`);
-    window.location.href = newUrl;
-    console.log(`Language changed to: ${selectedLang}`);
-});
+    const currentLang = currentUrl.includes("/en/") ? "en" : "fr";
+
+    langSelectors.forEach((selector) => {
+        selector.value = currentLang;
+        selector.addEventListener("change", function () {
+            const selectedLang = this.value;
+            const newUrl = window.location.href.replace(/\/(en|fr)\//, `/${selectedLang}/`);
+            window.location.href = newUrl;
+        });
+    });
+}

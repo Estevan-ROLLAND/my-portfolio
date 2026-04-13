@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../assets/css/professional.css">
         <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
         
@@ -23,11 +23,15 @@
         <div id="top">
             <header>
                 <div class="navbar">
-                    <ul>
-                        <li>
-                            <a href="index.html" id="myName"><strong>Estevan ROLLAND</strong></a>
-                        </li>
+                    <a href="index.html" id="myName"><strong>Estevan ROLLAND</strong></a>
 
+                    <button id="menu-toggle" class="menu-icon" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <ul class="nav-links">
                         <li class="cb_logo">
                             <a href="index.html#about-me">About Me</a>
                         </li>
@@ -37,6 +41,16 @@
                         <li>
                             <a id="my-cv" href="" download="CV-Estevan-ROLLAND">CV</a>
                         </li>
+                    </ul>
+                </div>
+
+                <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+                    <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close menu">&times;</button>
+                    <ul class="mobile-menu-links">
+                        <li><a href="index.html">Estevan ROLLAND (Accueil)</a></li>
+                        <li><a href="index.html#about-me">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="" download="CV-Estevan-ROLLAND">CV</a></li>
                     </ul>
                 </div>
             </header>
@@ -83,5 +97,6 @@
                 </div>
             </div>
         </footer>
+        <script src="../assets/js/burger-menu.js"></script>
     </body>
 </html>
