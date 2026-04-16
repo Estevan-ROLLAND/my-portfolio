@@ -30,16 +30,14 @@
     margin: 1rem 0;
 }
 
-#intro {
+/* #intro {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: flex-end;
-}
+} */
 
 #me-pic {
-    /* display: block;
-    margin: auto; */
-    height: 20rem;
+    display: none;
 }
 
 /* RESPONSIVE MOBILE */
