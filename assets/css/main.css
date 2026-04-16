@@ -74,6 +74,35 @@ h1 {
     width: 95%;
 }
 
+#about-me-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* width: 70%; */
+    font-family: "Oxanium", sans-serif !important;
+    font-size: large;
+    padding: .25rem 1rem;
+    margin: 1rem 0;
+}
+
+#about-me-btn svg {
+    fill: var(--base-variant);
+    height: 2em;
+    margin-left: 2rem;
+}
+
+#about-me-btn:hover {
+    background-color: var(--base-variant);
+    color: var(--text-color);
+    border-radius: 5px;
+    border-color: var(--text-color);
+}
+
+#about-me-btn:hover svg {
+    fill: var(--text-color);
+}
+
 #projects {
     display: flex;
     flex-direction: row;
@@ -90,7 +119,7 @@ h1 {
 }
 
 #projects h3 {
-    text-align: center;
+    text-align: justify;
     margin-left: 5%;
     padding-right: 2%;
 }
@@ -158,12 +187,15 @@ input:checked+label {
     width: 65%;
 }
 
+input:checked+label .row {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 input:checked+label .desc {
     opacity: 1 !important;
     transform: translateY(0) !important;
     padding-left: 3%;
     padding-right: 3%;
-    background-color: rgba(0, 0, 0, 0.6);
 }
 
 input:checked+.desc h2 {
@@ -195,6 +227,12 @@ input:checked+.desc h2 {
 
 .card[for="c3"] {
     background-image: url(../imgs/game.png);
+}
+
+.card[for="c4"] {
+    background-image: url(../imgs/bananaflix.png);
+    background-position: 0% 20%;
+
 }
 
 #buttonToProject {
@@ -244,6 +282,7 @@ input:checked+.desc h2 {
 
     #about-me {
         flex-direction: column;
+        justify-content: center;
         align-items: flex-start;
         margin-top: 1%;
         margin-bottom: 1%;
@@ -255,10 +294,29 @@ input:checked+.desc h2 {
         padding-left: 0;
         padding-top: 1rem;
         width: 100%;
+        text-align: justify;
     }
 
     #desc p {
         width: 100%;
+    }
+
+    #about-me-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-family: "Oxanium", sans-serif !important;
+        font-size: large;
+        padding: .25rem 1rem .25rem 7.5rem;
+        margin: 1rem 0;
+    }
+
+    #about-me-btn svg {
+        fill: var(--base-variant);
+        height: 2em;
+        margin-left: 2rem;
     }
 
     #projects {
@@ -271,6 +329,12 @@ input:checked+.desc h2 {
         align-self: flex-start;
         margin-bottom: 1rem;
     }
+
+    #projects h3 {
+        margin-left: 0%;
+        padding-right: 0%;
+    }
+
 
     #projects #split-bar {
         border-right: none;

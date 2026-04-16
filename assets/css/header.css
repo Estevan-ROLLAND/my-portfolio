@@ -181,7 +181,7 @@ a#myName:hover {
 
 /* Bannière de fin */
 footer {
-    margin-top: auto;
+    margin-top: 2rem;
     background-color: var(--base-color);
     border-top: var(--base-variant) thick solid;
     padding-top: 1%;
@@ -209,7 +209,7 @@ footer h1 {
     color: var(--text-color);
     text-align: center;
     font-style: oblique;
-    margin: 0;
+    margin: 0 0 1rem 0;
     /* padding-bottom: 2%; */
     font-weight: light;
     font-size: medium;
