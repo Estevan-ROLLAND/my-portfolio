@@ -50,20 +50,20 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 1.5rem;
-    padding: 2%;
+    padding: 1.5%;
     background-color: var(--base-color);
-    font-size: large;
+    font-size: x-large;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 1.5rem;
-    width: auto;
-    padding: 0;
+    width: 80%;
+    padding: 0 0 0 5%;
     margin: 0;
     list-style: none;
 }
@@ -80,15 +80,6 @@ h1 {
 
 .menu-icon {
     display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 44px;
-    height: 44px;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
 }
 
 .menu-icon span {
@@ -212,21 +203,29 @@ footer h1 {
     margin: 0 0 1rem 0;
     /* padding-bottom: 2%; */
     font-weight: light;
-    font-size: medium;
+    font-size: large;
 }
 
 .reseaux {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding-top: 1%;
     padding-bottom: 1%;
+    gap: 10rem;
 }
 
 .reseaux svg {
     fill: var(--text-color);
     height: 50px;
     width: 50px;
+}
+
+.reseaux a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 svg {
@@ -238,6 +237,7 @@ svg {
     .navbar {
         padding: 4% 4%;
         font-size: x-large;
+        justify-content: space-between;
     }
 
     .nav-links {
@@ -246,6 +246,14 @@ svg {
 
     .menu-icon {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 44px;
+        height: 44px;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
     }
 
     /* FOOTER */
@@ -256,6 +264,10 @@ svg {
 
     footer h1 {
         font-size: 32px;
+    }
+
+    .reseaux {
+        gap: 5rem;
     }
 
     .reseaux svg {

@@ -38,6 +38,7 @@
 
 #me-pic {
     display: none;
+    border-radius: 10px;
 }
 
 /* RESPONSIVE MOBILE */
