@@ -117,23 +117,6 @@ section a {
     /* margin-left: 2rem; */
 }
 
-#projects-sections {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-
-#School_Projects #img {
-    background-image: url("../imgs/shoe34.png");
-    background-position: top;
-}
-
-#Personal_Projects #img {
-    background-image: url("../imgs/bananaflix.png");
-    background-position: 0 20%;
-}
-
 #ytb_iframes,
 #sc_iframes {
     display: flex;
