@@ -99,7 +99,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
-    background: rgba(12, 12, 12, 0.98);
+    background: rgba(12, 12, 12, 0.9);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -114,8 +114,8 @@ h1 {
 
 .mobile-menu-close {
     position: absolute;
-    top: 1.2rem;
-    right: 1.2rem;
+    top: 2vh;
+    right: 5vw;
     border: 0;
     background: transparent;
     color: var(--text-color);
@@ -169,23 +169,41 @@ a#myName:hover {
     cursor: pointer;
 } */
 
+.lang-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--secondary-button-color);
+    border-radius: 5px;
+    background-color: var(--base-variant);
+    color: var(--text-color);
+    font-size: large;
+}
+
 
 /* Bannière de fin */
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 2rem;
     background-color: var(--base-color);
     border-top: var(--base-variant) thick solid;
     padding-top: 1%;
+    gap: 10rem;
 }
 
 footer h1 {
-    font-size: 50px;
+    font-size: 50px !important;
     color: var(--text-color);
     text-align: center;
-    margin: 0;
+    margin: 0 !important;
 }
 
-#contact {
+#contact-text {
     color: var(--text-color);
     text-align: center;
     font-style: oblique;
@@ -228,6 +246,10 @@ footer h1 {
     justify-content: center;
 }
 
+.reseaux a:hover svg {
+    fill: var(--secondary-button-color);
+}
+
 svg {
     fill: var(--text-color);
 }
@@ -256,14 +278,20 @@ svg {
         cursor: pointer;
     }
 
+    .mobile-menu-links a {
+        font-size: 2.5rem;
+    }
+
     /* FOOTER */
     footer {
+        flex-direction: column;
+        gap: 0;
         bottom: 0;
         padding: 1em 0;
     }
 
     footer h1 {
-        font-size: 32px;
+        font-size: 32px !important;
     }
 
     .reseaux {
@@ -275,11 +303,11 @@ svg {
         width: 35px;
     }
 
-    #contact {
-        font-size: large;
+    #contact-text {
+        font-size: x-large !important;
     }
 
     .mail {
-        font-size: small;
+        font-size: medium;
     }
 }

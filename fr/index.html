@@ -44,12 +44,12 @@
                     <li>
                         <a id="my-cv" href="../assets/FR_CV_Estevan_ROLLAND.pdf" download="CV_Estevan_ROLLAND">CV</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <select name="lang-selector" class="lang-selector">
                             <option value="en">EN</option>
                             <option value="fr">FR</option>
                         </select>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
 
@@ -60,12 +60,12 @@
                     <li><a href="about-me.html">À Propos</a></li>
                     <li><a href="projects.html">Projets</a></li>
                     <li><a href="../assets/FR_CV_Estevan_ROLLAND.pdf" download="CV_Estevan_ROLLAND">CV</a></li>
-                    <li>
+                    <!-- <li>
                         <select name="lang-selector-mobile" class="lang-selector">
                             <option value="en">EN</option>
                             <option value="fr">FR</option>
                         </select>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </header>
@@ -121,6 +121,7 @@
             <img id="me-pic" src="../assets/imgs/me-pic.jpg" alt="Photo de Estevan ROLLAND">
 
         </div>
+
         <div id="projects">
             <h1>
                 PROJETS
@@ -129,9 +130,12 @@
                 <h3>
                     Lors de mes études et de mon temps libre, j'ai travaillé sur plusieurs projets personnels et
                     scolaires.
-                    Vous pourrez y découvrir mes compétences en développement web, en modélisation 3D et en musique, ainsi que ma créativité et ma passion pour la technologie.
+                    Vous pourrez y découvrir mes compétences en développement web, en modélisation 3D et en musique,
+                    ainsi que ma créativité et ma passion pour la technologie.
                     <br> N'hésitez pas à explorer mes projets pour en savoir plus sur mon travail et mes intérêts !
-                    <p>Quelques exemples : un jeu vidéo multijoueur développé sur Unity, un site web pour un restaurant, une application mobile de films et séries, des animations et renders 3D, et mon projet musical Shadorian.</p>
+                    <p>Quelques exemples : un jeu vidéo multijoueur développé sur Unity, un site web pour un restaurant,
+                        une application mobile de films et séries, des animations et renders 3D, et mon projet musical
+                        Shadorian.</p>
                 </h3>
 
                 <!-- Carousel d'images et vidéos pour un apercu des projets-->
@@ -147,7 +151,7 @@
                                     <p>Mes projets personnels sur lesquels je travaille pendant mon temps libre</p>
                                 </div>
                                 <div id="buttonToProject">
-                                    <a href="projects.html#Personal_Projects">
+                                    <a href="projects.html#game">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
                                             viewBox="0 0 256 256">
                                             <path
@@ -170,7 +174,7 @@
                                     <p>Projets scolaires que j'ai réalisés au fil des années</p>
                                 </div>
                                 <div id="buttonToProject">
-                                    <a href="projects.html#School_Projects">
+                                    <a href="projects.html#school-projects">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
                                             viewBox="0 0 256 256">
                                             <path
@@ -195,7 +199,7 @@
                                         être.</p>
                                 </div>
                                 <div id="buttonToProject">
-                                    <a href="projects.html#Shadorian">
+                                    <a href="projects.html#shadorian">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
                                             viewBox="0 0 256 256">
                                             <path
@@ -218,7 +222,7 @@
                                     <p>Mes renders et animations que j'ai fait avec Blender</p>
                                 </div>
                                 <div id="buttonToProject">
-                                    <a href="projects.html#Modelling">
+                                    <a href="projects.html#3d-modelling">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
                                             viewBox="0 0 256 256">
                                             <path
@@ -241,33 +245,75 @@
                 LANGAGES ET TECHNOLOGIES
             </h1>
             <div id="languages-list">
-                <div class="language">
-                    <img src="../assets/imgs/html.png" alt="HTML Logo">
-                    <p>HTML</p>
+                <p>
+                    Voici une liste de mes compétences en développement d'applications et de sites web. Je suis
+                    toujours en train d'apprendre de nouvelles compétences et de nouveaux outils, donc cette liste
+                    est en constante évolution.
+                </p>
+                <div id="skills">
+                    <div id="front-end">
+                        <h2>Front-End</h2>
+                        <ul class="skill-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Android Compose</li>
+                            <li>JavaFX</li>
+                        </ul>
+                    </div>
+                    <div id="back-end">
+                        <h2>Back-End</h2>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>Golang</li>
+                            <li>Kotlin</li>
+                            <li>C# (Unity)</li>
+                            <li>Node.js</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                    <div id="database">
+                        <h2>Base de données</h2>
+                        <ul class="skill-list">
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>SQLite</li>
+                            <li>PostgreSQL</li>
+                            <li>JSON</li>
+                        </ul>
+                    </div>
+                    <div id="ide-tools">
+                        <h2>Outils de développement</h2>
+                        <ul class="skill-list">
+                            <li>Git</li>
+                            <li>Figma</li>
+                            <li>Visual Studio Code</li>
+                            <li>IntelliJ IDEA</li>
+                            <li>Android Studio</li>
+                            <li>SQL Developer</li>
+                            <li>Studio 3T</li>
+
+                        </ul>
+                    </div>
+                    <div id="analyse">
+                        <h2>Analyse / Design</h2>
+                        <ul class="skill-list">
+                            <li>UML</li>
+                            <li>BPMN</li>
+                            <li>Design Patterns</li>
+                            <li>Agile / Scrum</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="language">
-                    <img src="../assets/imgs/css.png" alt="CSS Logo">
-                    <p>CSS</p>
-                </div>
-                <div class="language">
-                    <img src="../assets/imgs/javascript.png" alt="JavaScript Logo">
-                    <p>JavaScript</p>
-                </div>
-                <div class="language">
-                    <img src="../assets/imgs/python.png" alt="Python Logo">
-                    <p>Python</p>
-                </div>
-                <div class="language">
-                    <img src="../assets/imgs/csharp.png" alt="C# Logo">
-                    <p>C#</p>
-                </div>
+            </div>
         </div>
-    </div>
-    <footer id="aboutus">
-        <div id="bannerend">
+        <footer id="aboutus">
             <h1 id="aboutus">Estevan ROLLAND</h1>
-            <p id="contact">---- Contacts ----</p>
-            <p class="mail" id="mail-pro">rollandestevan.pro@gmail.com</p>
+            <div id="contact">
+                <p id="contact-text">---- Contacts ----</p>
+                <p class="mail" id="mail-pro">rollandestevan.pro@gmail.com</p>
+            </div>
             <div class="reseaux">
                 <a id="linkedin" href="https://www.linkedin.com/in/estevan-rolland-ab8056367/">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
@@ -286,12 +332,11 @@
                     <p>GitHub</p>
                 </a>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!--parties javascript-->
-    <script src="../assets/js/translate.js"></script>
-    <script src="../assets/js/burger-menu.js"></script>
+        <!--parties javascript-->
+        <script src="../assets/js/translate.js"></script>
+        <script src="../assets/js/burger-menu.js"></script>
 
 </body>
 
