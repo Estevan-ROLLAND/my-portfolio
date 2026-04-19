@@ -1,3 +1,12 @@
 .title-projects {
     background-image: url(../../imgs/game.png);
 }
+
+#body {
+    flex-direction: column;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+}

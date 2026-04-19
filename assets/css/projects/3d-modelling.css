@@ -1,3 +1,10 @@
 .title-projects {
     background-image: url(../../imgs/Sci-Fi\ Passage.png);
 }
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
